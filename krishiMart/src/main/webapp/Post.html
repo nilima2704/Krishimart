@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Post page</title>
+<link rel="stylesheet" href="Post.css">
+</head>
+<body>
+	<div class="navDiv">
+		<ul>
+			<li> <img class="img" alt="error" src="logo1.png"> </li>
+			<li> <a href="FarmerHomePage.jsp"> Home </a>  </li>
+			<li> <a href="Post.html"> Post </a>  </li>
+			<li> <a href="Profile.jsp"> Profile </a>  </li>
+			<li> <a href="Maintain.html"> About </a>  </li>
+			<li> <a href="Maintain.html"> Contact </a>  </li>
+			<li> <a href="logout"><img class="img-logout" alt="error" src="switch.png"></a> </li>
+		</ul>
+	</div>
+	<div class="formDiv">
+		<h1>Add post: </h1>
+		<form action="addPost" method="post">
+               		
+			<label class="label-style">Product Name: </label> <br>
+            <input class="Input-style" type="text" name="name" placeholder="Enter name" required> <br><br>
+
+			<label class="label-style">Product Quantity: </label> <br>
+			<input class="Input-style" type="number" name="quantity" placeholder="Enter quantity" required> <br><br>
+
+			<label class="label-style">Product Price: </label> <br>
+			<input class="Input-style" type="number" name="price" placeholder="Enter price" required> <br><br>
+
+			<label class="label-style">Product Description: </label> <br>
+			<input class="Input-style" type="text" name="description" placeholder="Enter description" required> <br><br>
+
+			<input class="button-style" type="submit" value="Add Post">  <br> 
+		</form>
+		<button class="button-style"><a href="FarmerHomePage.jsp">Cancel</a></button>
+	</div>     
+</body>
+</html>

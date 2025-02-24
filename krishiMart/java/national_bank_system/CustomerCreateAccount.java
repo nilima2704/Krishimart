@@ -1,0 +1,59 @@
+package national_bank_system;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/createCUStomer")
+public class CustomerCreateAccount extends HttpServlet
+{
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
+	{
+		String id = req.getParameter("id") ;
+		String name = req.getParameter("name") ;
+		String pincode = req.getParameter("pincode") ;
+		long accountnumber = (long) (Math.random()*1000000000) ;
+		double balance = 500.00 ;
+		
+		try 
+		{
+			Class.forName("com.mysql.cj.jdbc.Driver") ;
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/national_bank", "root", "MySQL@9566") ;
+			PreparedStatement ps = con.prepareStatement("insert into customer(id, name, accountnumber, pincode, balance) values(?,?,?,?,?)") ;
+			ps.setInt(1, Integer.parseInt(id)) ;
+			ps.setString(2, name) ;
+			ps.setLong(3, accountnumber) ;
+			ps.setInt(4, Integer.parseInt(pincode)) ;
+			ps.setDouble(5, balance) ;
+			
+			
+			ps.execute() ;
+			
+			
+			PrintWriter pw = resp.getWriter() ;
+			pw.println("<h1 style=text-align:center; color:red;> Your Account is Created </h1> <p style=text-align:center; color:red;> Now you can Log in your Account </p>") ;
+			
+			RequestDispatcher rd = req.getRequestDispatcher("customerlogin.html") ;
+			rd.include(req, resp) ;
+		} 
+		catch (ClassNotFoundException e) 
+		{
+			e.printStackTrace();
+		} 
+		catch (SQLException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+}

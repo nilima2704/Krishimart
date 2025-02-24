@@ -1,0 +1,104 @@
+@charset "ISO-8859-1";
+body
+{
+    background-color: #a7d8de;
+    margin: 0;
+}
+
+.navDiv
+{
+	height: 50px ;
+	width: 100% ;
+	background-color: #333333;
+	overflow: hidden; 
+	position: fixed; 
+}
+
+ .navDiv ul 
+{
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+	 overflow: hidden; 
+}
+
+ .navDiv li
+{
+	float: left;
+}
+
+ .navDiv li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  padding-left: 70px ;
+  text-decoration: none;
+  margin-left: 100px ;
+}
+
+.navDiv li a:hover 
+{
+  color: yellow;
+}
+
+.img
+{
+	margin: 5px 5px 5px 15px ;
+	width: 70px ;
+	height: 40px ;
+	background-color: white;
+	border-radius: 10px ;
+}
+
+.img-logout
+{
+	width: 50px ;
+	height: 40px ;
+    margin-top: -10px;
+}
+
+.formDiv
+{
+    width: 40%;
+    height: 70vh;
+    margin-left: 30%;
+    font-size: 20px;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.label-style
+{
+	margin-top: 10px ;
+    font-size: 25px;
+    font-family: ui-serif;
+}
+
+.Input-style
+{
+    height: 25px;
+    border-radius: 5px;
+}
+
+.button-style
+{
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #ee6a50;
+    color: white;
+    border-radius: 10px;
+}
+
+.button-style:hover
+{
+    background-color:white;
+    color:  #ee6a50;
+}
+
+a
+{
+    /* color: white; */
+    text-decoration: none;
+}

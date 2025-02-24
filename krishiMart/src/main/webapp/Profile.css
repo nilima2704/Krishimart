@@ -1,0 +1,136 @@
+@charset "ISO-8859-1";
+body
+{
+    background-color: #a7d8de;
+    margin: 0;
+}
+
+.navDiv
+{
+	height: 50px ;
+	width: 100% ;
+	background-color: #333333;
+	overflow: hidden;
+	position: fixed;
+}
+
+ .navDiv ul 
+{
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+	 overflow: hidden; 
+}
+
+ .navDiv li
+{
+	float: left;
+}
+
+ .navDiv li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  padding-left: 70px ;
+  text-decoration: none;
+  margin-left: 100px ;
+}
+
+.navDiv li a:hover 
+{
+  color: yellow;
+}
+
+.img
+{
+	margin: 5px 5px 5px 15px ;
+	width: 70px ;
+	height: 40px ;
+	background-color: white;
+	border-radius: 10px ;
+}
+
+.img-logout
+{
+    margin-top: -10px ;
+	width: 50px ;
+	height: 40px ;
+}
+
+.main-div
+{
+    display: flex;
+}
+
+.img-div
+{
+    width: 350px;
+    height: 300px;
+    margin-top: 10%;
+    margin-left: 10%;
+    border-radius: 20%;
+    background-image: url("Profile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1
+{
+    color: #ee6a50;
+}
+
+span
+{
+    font-weight: bolder;
+}
+
+.profile-div
+{
+    width: 400px;
+    height: 250px;
+    margin-top: 10% ;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 8%;
+}
+
+.btn-div
+{
+    width: 400px;
+    height: 150px;
+    margin-top: -40px ;
+    margin-left: 35%;
+    display: flex;
+   
+}
+
+.btn-style-div
+{
+    width: 150px;
+    height: 100px;
+    /* margin: 10px; */
+    margin-left: 25px;
+    /* padding-top: 20px; */
+    padding-left: 15px;
+}
+
+.btn
+{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ee6a50;
+    margin-top: 20px;
+}
+
+.btn:hover
+{
+    background-color: white;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,133 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+.maindiv{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color:none;
+}
+#bgimg{
+    background-image: url('Shetakari12345.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 20% 80% ;
+}
+.applogo{
+  position: relative;
+  top: 2%;
+  left:10%;
+}
+.logoimg{
+    height: 180px;
+}
+.mart{
+    font-size: 50px;
+    font-family: Arial Black;
+    color: rgb(238, 9, 9);
+    margin-top: -65px;
+    margin-left: 100px;
+}
+.cardreg{
+  
+    height: 250px;
+    width:300px;
+    position: relative;
+    bottom: 150px;
+    left:1000px;
+    margin: 20px;
+    display: grid;
+    margin-right: 30px;
+    border-radius: 30px;
+    transition-duration: 1s;
+    box-shadow: 0 0 2px rgb(17, 12, 12);
+
+}
+
+.cardreg:hover{
+    box-shadow: 0 0 10px rgb(158, 3, 3);
+}
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	        animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+}
+
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+.common-card div img{
+    margin: 20px;
+  }
+  .heading{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: #ff8c00;
+    margin-top: 10px;
+  }
+  .signup{
+    height: 40px;
+    width: 150px;
+    background-color: #2a52be;
+    margin-bottom: 5px;
+    line-height: 40px;
+    border-radius: 20px;
+    transition-duration: 1s ;
+  }
+  
+  .login
+  {
+  	height: 40px;
+    width: 150px;
+    background-color:#2a52be;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    padding-left: 10%;
+    margin-left: 25%;
+    line-height: 40px;
+    border-radius: 20px;
+    transition-duration: 1s;
+  }
+
+  .login:hover{
+    transform: scale(0.9);
+  }
+  
+  .signup:hover{
+    transform: scale(0.9);
+  }
+  a{
+    text-decoration: none;
+    color:white;
+    font-family: Arial Black;
+    font-size: 20px;
+  }
